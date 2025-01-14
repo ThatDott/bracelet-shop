@@ -240,6 +240,8 @@ ul li:hover .dropdown li a{
 
 #small > img {
   height: 150px;
+  background: none;
+  border: var(--base) solid 5px;
   transition: transform 0.5s;
 }
 
