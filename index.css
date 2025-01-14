@@ -1,5 +1,5 @@
 :root {
-  --base: #994093;
+  --base: #004093;
   --complementary: #f8f8ff;
   --accent: #fff7d6;
 }
@@ -12,9 +12,9 @@
 }
 
 nav {
-  height: 10vh;
-  position: sticky;
-  top: 0;
+  height: 13vh;
+  position: fixed;
+  width: 100vw;
   z-index: 100;
 }
 
@@ -22,7 +22,7 @@ a {
   font-size: 12px;
   display: block;
   height: 100%;
-  color: black;
+  color: var(--complementary);
   text-decoration: none;
   align-content: center;
 }
@@ -32,7 +32,13 @@ a {
   justify-content: center;
   list-style: none;
   text-align: center;
-  background: var(--complementary);
+  background: var(--base);
+  transition: transform 0.5s;
+}
+
+.scrolled {
+  transform: translateY(-100%);
+  transition: transform 0.5s;
 }
 
 .navbar li {
@@ -44,7 +50,7 @@ a {
 }
 
 .navbar li:hover {
-  text-decoration: underline;
+  text-decoration: white underline;
 }
 
 .dropdown {
@@ -60,7 +66,7 @@ a {
   height: 100%;
   width: 100%;
   display: block;
-  background: var(--complementary);
+  background: var(--base);
 }
 
 .dropdown li a {
@@ -74,39 +80,40 @@ ul li:hover .dropdown {
   transition: height 0.5s;
 }
 ul li:hover .dropdown li a{
-  color: black;
+  color: var(--complementary);
   visibility: visible;
   transition: color 0.5s;
+  border: rgba(255,255,255,0.1) solid 1px;
 }
 
 .main {
-  height: 90vh;
+  padding: 10vh 5vh 0 5vh;
   width: 100vw;
   background: var(--base);
   display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: center;
 }
 
 .main-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   gap: 10px;
-  position: absolute;
-  bottom: 10%;
+  bottom: 40%;
   right: 0;
-  padding: 30px 70px;
+  padding: 70px 70px;
   color: var(--complementary);
   z-index: 1;
 }
 
 .main-header h1 {
-  text-align: right;
+  text-align: center;
   width: 200px;
 }
 
 .main-header-button {
-  align-self: flex-end;
   color: var(--complementary);
   background: none;
   width: fit-content;
@@ -126,9 +133,9 @@ ul li:hover .dropdown li a{
   position: relative;
   align-self: center;
   background: black;
-  height: 80%;
-  width: 100%;
-  margin: 0px 30px;
+  aspect-ratio: 21/9;
+  width: 70vw;
+  margin: 0 15vw;
 }
 
 .section {
