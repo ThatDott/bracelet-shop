@@ -1,5 +1,6 @@
 :root {
-  --base: #004093;
+  ---base: #004093;
+  --base: #119093;
   --complementary: #f8f8ff;
   --accent: #fff7d6;
 }
@@ -9,6 +10,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", serif;
+}
+
+body {
+  background: var(--complementary);
 }
 
 nav {
@@ -25,6 +30,13 @@ a {
   color: var(--complementary);
   text-decoration: none;
   align-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbar {
@@ -141,11 +153,97 @@ ul li:hover .dropdown li a{
 .section {
   display: flex;
   position: relative;
+  flex-direction: column;
   background: var(--complementary);
-  height: 80vh;
+  height: fit-content;
   color: var(--base);
   justify-content: center;
-  padding: 50px 50px;
   margin: 50px 15vw;
-  border: 1px solid black;
+}
+
+.section-header {
+  padding: 10px 0;
+}
+
+.section-header > h2 {
+  text-align: center;
+}
+
+.section-scroller {
+  display: flex;
+  overflow-y: hidden;
+  gap: 20px;
+  margin: 20px;
+}
+
+.section-scroller > img {
+  background: black;
+  aspect-ratio: 1/1;
+}
+
+.slider-button {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 100px;
+  background: var(--base);
+  color: var(--complementary);
+  border: 0;
+  transition: border 0.5s, background 0.5s;
+  z-index: 10;
+}
+
+.slider-button:hover {
+  background: none;
+  color: var(--base);
+  border: 1px var(--base) solid;
+  transition: border 0.5s, background 0.5s;
+}
+
+.slider-button:active {
+  transform: scale(0.95);
+}
+
+#next {
+  right: 0;
+}
+
+#large {
+  justify-content: center;
+  overflow-x: auto;
+}
+
+#large > img:nth-child(1) {
+  display: block;
+}
+
+#large > img {
+  max-height: 500px;
+  height: 50vw;
+  display: none;
+}
+
+#medium {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#medium > img {
+  height: 200px;
+}
+
+#small {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}
+
+#small > img {
+  height: 150px;
+  transition: transform 0.5s;
+}
+
+#small > img:hover {
+  transform: translateY(-10px);
+  transition: transform 0.5s;
 }
