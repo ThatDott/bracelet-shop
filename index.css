@@ -1,59 +1,144 @@
+:root {
+  --base: #994093;
+  --complementary: #f8f8ff;
+  --accent: #fff7d6;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: monospace;
+  font-family: "Rubik", serif;
 }
 
 nav {
-  height: 7vh;
-  background: black;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 a {
+  font-size: 12px;
   display: block;
   height: 100%;
+  color: black;
   text-decoration: none;
-  color: white;
   align-content: center;
 }
 
 .navbar {
   height: 100%;
   justify-content: center;
-  display: flex;
-  flex-direction: row;
   list-style: none;
   text-align: center;
+  background: var(--complementary);
 }
 
 .navbar li {
   display: inline-block;
   position: relative;
-  width: 20%;
+  width: 100px;
   height: 100%;
   align-content: center;
 }
 
 .navbar li:hover {
-  background: rgba(30, 30, 30, 1);
+  text-decoration: underline;
 }
 
 .dropdown {
-  height: 100%;
+  height: 0%;
   width: 100%;
-  display: none;
+  display: block;
   position: absolute;
   text-align: center;
+  transition: height 0.5s;
 }
 
 .dropdown li {
   height: 100%;
   width: 100%;
   display: block;
-  background: black;
+  background: var(--complementary);
+}
+
+.dropdown li a {
+  color: rgba(0,0,0,0);
+  visibility: hidden;
+  transition: color 0.5s;
 }
 
 ul li:hover .dropdown {
-  display: block;
+  height: 100%;
+  transition: height 0.5s;
+}
+ul li:hover .dropdown li a{
+  color: black;
+  visibility: visible;
+  transition: color 0.5s;
+}
+
+.main {
+  height: 90vh;
+  width: 100vw;
+  background: var(--base);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  padding: 30px 70px;
+  color: var(--complementary);
+  z-index: 1;
+}
+
+.main-header h1 {
+  text-align: right;
+  width: 200px;
+}
+
+.main-header-button {
+  align-self: flex-end;
+  color: var(--complementary);
+  background: none;
+  width: fit-content;
+  padding: 20px;
+  transition: background 0.2s, color 0.2s;
+  border: 1px solid var(--complementary);
+  cursor: pointer;
+}
+
+.main-header-button:hover {
+  background: var(--complementary);
+  transition: background 0.2s, color 0.2s;
+  color: black;
+}
+
+.main-preview {
+  position: relative;
+  align-self: center;
+  background: black;
+  height: 80%;
+  width: 100%;
+  margin: 0px 30px;
+}
+
+.section {
+  display: flex;
+  position: relative;
+  background: var(--complementary);
+  height: 80vh;
+  color: var(--base);
+  justify-content: center;
+  padding: 50px 50px;
+  margin: 50px 15vw;
+  border: 1px solid black;
 }
