@@ -20,7 +20,25 @@ nav {
   height: 13vh;
   position: fixed;
   width: 100vw;
-  z-index: 100;
+  z-index: 10;
+}
+
+footer {
+  background: var(--base);
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  z-index: 10;
+}
+
+footer ul {
+  text-align: center;
+  list-style: none;
+
 }
 
 a {
@@ -45,12 +63,12 @@ a {
   list-style: none;
   text-align: center;
   background: var(--base);
-  transition: transform 0.5s;
+  transition: transform 1s;
 }
 
 .scrolled {
-  transform: translateY(-100%);
-  transition: transform 0.5s;
+  transform: translateY(-400%);
+  transition: transform 1s;
 }
 
 .navbar li {
@@ -146,8 +164,25 @@ ul li:hover .dropdown li a{
   align-self: center;
   background: black;
   aspect-ratio: 21/9;
-  width: 70vw;
+  width: 100vw;
   margin: 0 15vw;
+}
+
+.main-preview-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  position: absolute;
+  text-align: right;
+  padding: 5vw;
+  bottom: 0;
+  right: 0;
+  color: var(--complementary);
+}
+
+.main-preview-header h2 {
+  width: 200px;
 }
 
 .section {
@@ -233,7 +268,7 @@ ul li:hover .dropdown li a{
 }
 
 #small {
-  justify-content: flex-start;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 10px 0px;
 }
