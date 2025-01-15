@@ -193,7 +193,23 @@ ul li:hover .dropdown li a{
   height: fit-content;
   color: var(--base);
   justify-content: center;
-  margin: 50px 15vw;
+  margin: 0px 10vw;
+}
+
+.section::before, .section::after {
+  content: '';
+  align-self: center;
+  width: 150px;
+  margin: 30px 0;
+}
+
+.section:nth-child(n+3)::before {
+  content: '';
+  margin: 0 0 60px 0;
+  height: 5px;
+  border-radius: 500px;
+  border: 1px black solid;
+  opacity: 30%;
 }
 
 .section-header {
@@ -254,7 +270,7 @@ ul li:hover .dropdown li a{
 
 #large > img {
   max-height: 500px;
-  height: 50vw;
+  height: 60vw;
   display: none;
 }
 
@@ -264,8 +280,7 @@ ul li:hover .dropdown li a{
 }
 
 #medium > img {
-  max-height: 200px;
-  height: 20vw;
+  height: 200px;
 }
 
 #small {
