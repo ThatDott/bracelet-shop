@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vanilla E-Commerce Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gugi&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Exa:wght@100..900&family=Lexend:wght@100..900&family=Patua+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./root.css" />
+    <link rel="stylesheet" href="./product-list.css" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <script src="./navbar.js"></script>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav id="nav">
+      <ul class="navbar">
+        <li><a href="./index.html">HOME</a></li>
+        <li>
+          <a href="./product-list.html">PRODUCTS</a>
+          <ul class="dropdown">
+            <li><a href="">Item 1</a></li>
+            <li><a href="">Item 2</a></li>
+            <li><a href="">Item 3</a></li>
+          </ul>
+        </li>
+        <li><a href="">SEARCH</a></li>
+        <li><a href="">ACCOUNT</a></li>
+      </ul>
+    </nav>
+
+    <!-- Product List Container -->
+    <div class="container">
+      <div class="product-header">
+        <div id="sort">
+          <p>Sort By:</p>
+          <div class="row">
+            <button>Price</button>
+            <button>Latest</button>
+            <button>Top Selling</button>
+          </div>
+        </div>
+        <div id="filter">
+          <p>Filter By:</p>
+          <div class="row">
+            <button>Men's Collection</button>
+            <button>Women's Collection</button>
+            <button>Limited Edition</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-list">
+        <img class="product-list-item" id="001" />
+        <img class="product-list-item" id="002" />
+        <img class="product-list-item" id="003" />
+        <img class="product-list-item" id="004" />
+        <img class="product-list-item" id="005" />
+        <img class="product-list-item" id="006" />
+        <img class="product-list-item" id="007" />
+      </div>
+    </div>
+  </body>
+</html>

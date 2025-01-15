@@ -1,0 +1,17 @@
+:root {
+  ---base: #004093;
+  --base: #119093;
+  --complementary: #f8f8ff;
+  --accent: #fff7d6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", serif;
+}
+
+body {
+  background: var(--complementary);
+}
