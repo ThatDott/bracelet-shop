@@ -1,0 +1,92 @@
+nav {
+  height: 10vh;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+}
+
+footer {
+  background: var(--base);
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  z-index: 10;
+}
+
+footer ul {
+  text-align: center;
+  list-style: none;
+
+}
+
+a {
+  font-size: 12px;
+  display: block;
+  height: 100%;
+  color: var(--complementary);
+  text-decoration: none;
+  align-content: center;
+}
+
+.navbar {
+  height: 100%;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+  background: var(--base);
+  transition: transform 1s;
+}
+
+.scrolled {
+  transform: translateY(-400%);
+  transition: transform 1s;
+}
+
+.navbar li {
+  display: inline-block;
+  position: relative;
+  width: 100px;
+  height: 100%;
+  align-content: center;
+}
+
+.navbar li:hover {
+  text-decoration: white underline;
+}
+
+.dropdown {
+  height: 0%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  text-align: center;
+  transition: height 0.5s;
+}
+
+.dropdown li {
+  height: 100%;
+  width: 100%;
+  display: block;
+  background: var(--base);
+}
+
+.dropdown li a {
+  color: rgba(0,0,0,0);
+  visibility: hidden;
+  transition: color 0.5s;
+}
+
+ul li:hover .dropdown {
+  height: 100%;
+  transition: height 0.5s;
+}
+ul li:hover .dropdown li a{
+  color: var(--complementary);
+  visibility: visible;
+  transition: color 0.5s;
+  border: rgba(255,255,255,0.1) solid 1px;
+}

@@ -10,9 +10,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./index.css" />
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./navbar.css" />
+    <script src="./index.js"></script>
+    <script src="./navbar.js"></script>
   </head>
   <body>
+
+    <!-- NavBar -->
     <nav id="nav">
       <ul class="navbar">
         <li><a href="">HOME</a></li>
@@ -28,6 +32,8 @@
         <li><a href="">ACCOUNT</a></li>
       </ul>
     </nav>
+
+    <!-- Main Container For Home Page-->
     <div class="container">
       <div class="main">
         <div class="main-preview">
@@ -57,7 +63,7 @@
         </div>
         <div class="row">
           <button class="slider-button" id="prev" onclick="moveSlide(-1)">
-            -
+            <b><</b>
           </button>
           <div class="section-scroller" id="large">
             <img src="" class="slide" />
@@ -67,7 +73,7 @@
             <img src="" class="slide" />
           </div>
           <button class="slider-button" id="next" onclick="moveSlide(1)">
-            +
+            <b>></b>
           </button>
         </div>
       </div>
