@@ -17,7 +17,7 @@ body {
 }
 
 nav {
-  height: 13vh;
+  height: 10vh;
   position: fixed;
   width: 100vw;
   z-index: 10;
@@ -264,7 +264,8 @@ ul li:hover .dropdown li a{
 }
 
 #medium > img {
-  height: 200px;
+  max-height: 200px;
+  height: 20vw;
 }
 
 #small {
@@ -274,7 +275,8 @@ ul li:hover .dropdown li a{
 }
 
 #small > img {
-  height: 150px;
+  max-height: 150px;
+  height: 15vw;
   background: none;
   border: var(--base) solid 5px;
   transition: transform 0.5s;
