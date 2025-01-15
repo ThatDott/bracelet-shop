@@ -24,13 +24,13 @@
   flex-direction: row;
   text-align: center;
   gap: 10px;
+  white-space: no-wrap;
 }
 
 .product-header div button {
   background: none;
   height: 50px;
   padding: 10px;
-  border-radius: 5px;
   border: 1px var(--base) solid;
 }
 
@@ -54,11 +54,46 @@
 }
 
 .product-list-item {
-  display: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  bottom: 0;
   margin: 0 20px 20px 20px;
   width: calc(33.33% - 40px);
   aspect-ratio: 1/1;
-  border: 1px solid black;
+  border: 1px solid var(--base);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 0 10px 0;
+  cursor: pointer;
+  transition: border 0.5s;
+  background: black;
+}
+
+.product-list-item:hover {
+  border: 10px solid var(--base);
+  transition: border 0.5s;
+}
+
+.product-list-item > * {
+  text-align: center;
+}
+
+.product-list-item > h3 {
+  color: var(--complementary);
+  font-weight: bold;
+  max-width: 100%;
+  font-size: 80%;
+  align-self: center;
+}
+
+.product-list-item > h4 {
+  color: var(--base);
+}
+
+.product-list-item > h5 {
+  color: var(--complementary);
+  font-size: 10px;
 }
 
 .row {

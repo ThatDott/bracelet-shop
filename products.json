@@ -1,0 +1,62 @@
+{
+    "1": {
+        "name": "Minimalist Bracelet",
+        "price": "P200.00",
+        "category": "Men's",
+        "image": "img1.jpg"
+    },
+    "2": {
+        "name": "Elegant Bracelet",
+        "price": "P250.00",
+        "category": "Women's",
+        "image": "img2.jpg"
+    },
+    "3": {
+        "name": "Leather Bracelet",
+        "price": "P300.00",
+        "category": "Unisex",
+        "image": "img3.jpg"
+    },
+    "4": {
+        "name": "Beaded Bracelet",
+        "price": "P150.00",
+        "category": "Men's",
+        "image": "img4.jpg"
+    },
+    "5": {
+        "name": "Charm Bracelet",
+        "price": "P350.00",
+        "category": "Women's",
+        "image": "img5.jpg"
+    },
+    "6": {
+        "name": "Gold Plated Bracelet",
+        "price": "P500.00",
+        "category": "Unisex",
+        "image": "img6.jpg"
+    },
+    "7": {
+        "name": "Silver Bracelet",
+        "price": "P400.00",
+        "category": "Men's",
+        "image": "img7.jpg"
+    },
+    "8": {
+        "name": "Adjustable Bracelet",
+        "price": "P220.00",
+        "category": "Women's",
+        "image": "img8.jpg"
+    },
+    "9": {
+        "name": "Fitness Tracker Bracelet",
+        "price": "P600.00",
+        "category": "Unisex",
+        "image": "img9.jpg"
+    },
+    "10": {
+        "name": "Pearl Bracelet",
+        "price": "P700.00",
+        "category": "Women's",
+        "image": "img10.jpg"
+    }
+}
