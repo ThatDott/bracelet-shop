@@ -1,6 +1,7 @@
-function loadProducts(sortId) {
+function loadProducts(sortId, filterId) {
   const productList = document.querySelector(".product-list");
   const emptyMessage = document.createElement("h2");
+  // Message If No Products
   emptyMessage.textContent = "No Items Found";
 
   const file = "products.json";
@@ -12,11 +13,23 @@ function loadProducts(sortId) {
       return res.json();
     })
     .then((products) => {
-      const productsArray = Object.keys(products).map(key => products[key]);
+      let productsArray = Object.keys(products).map(key => products[key]);
       
-      productsArray.sort((a, b) => a[sortId].localeCompare(b[sortId]));
+      // Filter Products
+      if (filterId != 0) {
+        productsArray = productsArray.filter((product) => {
+          return (product.category == filterId)
+        })
+      }
+
+      // Sort Products
+      if (sortId != 0) {
+        productsArray.sort((a, b) => a[sortId].localeCompare(b[sortId]));
+      }
+      // Reset Products
       productList.innerHTML = "";
 
+      // Generate Products in DOM
       productsArray.forEach(product => {
         if (product) {
           const newProduct = document.createElement("div");
@@ -43,5 +56,5 @@ function loadProducts(sortId) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  loadProducts("name");
+  loadProducts("name", 0);
 });
