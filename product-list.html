@@ -39,17 +39,18 @@
         <div id="sort">
           <p>Sort By:</p>
           <div class="row">
-            <button onClick="loadProducts('name', 0)">Name</button>
-            <button onClick="loadProducts('price', 0)">Price</button>
-            <button onClick="loadProducts('category', 0)">Category</button>
+            <button class="sort-button" onClick="sortProducts(event, 'name')">Name</button>
+            <button class="sort-button" onClick="sortProducts(event, 'price')">Price</button>
+            <button class="sort-button" onClick="sortProducts(event, 'category')">Category</button>
           </div>
         </div>
         <div id="filter">
           <p>Filter By:</p>
           <div class="row">
-            <button onClick="loadProducts(0, 'Men\'s')">Men's Collection</button>
-            <button onClick="loadProducts(0, 'Women\'s')">Women's Collection</button>
-            <button onClick="loadProducts(0, 'Unisex')">Unisex</button>
+            <button class="filter-button active" onClick="filterProducts(event, 0)">None</button>
+            <button class="filter-button" onClick="filterProducts(event, 'Men\'s')">Men's Collection</button>
+            <button class="filter-button" onClick="filterProducts(event, 'Women\'s')">Women's Collection</button>
+            <button class="filter-button" onClick="filterProducts(event, 'Unisex')">Unisex</button>
           </div>
         </div>
       </div>

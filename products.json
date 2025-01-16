@@ -58,5 +58,245 @@
         "price": "P700.00",
         "category": "Women's",
         "image": "img10.jpg"
+    },
+    "11": {
+        "name": "Wooden Beads Bracelet",
+        "price": "P180.00",
+        "category": "Men's",
+        "image": "img11.jpg"
+    },
+    "12": {
+        "name": "Diamond Bracelet",
+        "price": "P800.00",
+        "category": "Women's",
+        "image": "img12.jpg"
+    },
+    "13": {
+        "name": "Silicone Bracelet",
+        "price": "P100.00",
+        "category": "Unisex",
+        "image": "img13.jpg"
+    },
+    "14": {
+        "name": "Friendship Bracelet",
+        "price": "P90.00",
+        "category": "Men's",
+        "image": "img14.jpg"
+    },
+    "15": {
+        "name": "Crystal Bracelet",
+        "price": "P450.00",
+        "category": "Women's",
+        "image": "img15.jpg"
+    },
+    "16": {
+        "name": "Stainless Steel Bracelet",
+        "price": "P250.00",
+        "category": "Unisex",
+        "image": "img16.jpg"
+    },
+    "17": {
+        "name": "Cuff Bracelet",
+        "price": "P300.00",
+        "category": "Men's",
+        "image": "img17.jpg"
+    },
+    "18": {
+        "name": "Rose Gold Bracelet",
+        "price": "P500.00",
+        "category": "Women's",
+        "image": "img18.jpg"
+    },
+    "19": {
+        "name": "Bangle Bracelet",
+        "price": "P350.00",
+        "category": "Unisex",
+        "image": "img19.jpg"
+    },
+    "20": {
+        "name": "Leather Cuff Bracelet",
+        "price": "P320.00",
+        "category": "Men's",
+        "image": "img20.jpg"
+    },
+    "21": {
+        "name": "Platinum Bracelet",
+        "price": "P1000.00",
+        "category": "Women's",
+        "image": "img21.jpg"
+    },
+    "22": {
+        "name": "Titanium Bracelet",
+        "price": "P400.00",
+        "category": "Unisex",
+        "image": "img22.jpg"
+    },
+    "23": {
+        "name": "Rope Bracelet",
+        "price": "P200.00",
+        "category": "Men's",
+        "image": "img23.jpg"
+    },
+    "24": {
+        "name": "Shell Bracelet",
+        "price": "P180.00",
+        "category": "Women's",
+        "image": "img24.jpg"
+    },
+    "25": {
+        "name": "Anklet Bracelet",
+        "price": "P220.00",
+        "category": "Unisex",
+        "image": "img25.jpg"
+    },
+    "26": {
+        "name": "Wristband Bracelet",
+        "price": "P140.00",
+        "category": "Men's",
+        "image": "img26.jpg"
+    },
+    "27": {
+        "name": "Chain Bracelet",
+        "price": "P450.00",
+        "category": "Women's",
+        "image": "img27.jpg"
+    },
+    "28": {
+        "name": "Cord Bracelet",
+        "price": "P120.00",
+        "category": "Unisex",
+        "image": "img28.jpg"
+    },
+    "29": {
+        "name": "Luxury Bracelet",
+        "price": "P900.00",
+        "category": "Men's",
+        "image": "img29.jpg"
+    },
+    "30": {
+        "name": "Handmade Bracelet",
+        "price": "P250.00",
+        "category": "Women's",
+        "image": "img30.jpg"
+    },
+    "31": {
+        "name": "Stone Bracelet",
+        "price": "P300.00",
+        "category": "Unisex",
+        "image": "img31.jpg"
+    },
+    "32": {
+        "name": "Magnetic Bracelet",
+        "price": "P600.00",
+        "category": "Men's",
+        "image": "img32.jpg"
+    },
+    "33": {
+        "name": "Birthstone Bracelet",
+        "price": "P400.00",
+        "category": "Women's",
+        "image": "img33.jpg"
+    },
+    "34": {
+        "name": "Braided Bracelet",
+        "price": "P180.00",
+        "category": "Unisex",
+        "image": "img34.jpg"
+    },
+    "35": {
+        "name": "Signature Bracelet",
+        "price": "P500.00",
+        "category": "Men's",
+        "image": "img35.jpg"
+    },
+    "36": {
+        "name": "Love Bracelet",
+        "price": "P700.00",
+        "category": "Women's",
+        "image": "img36.jpg"
+    },
+    "37": {
+        "name": "Link Bracelet",
+        "price": "P350.00",
+        "category": "Unisex",
+        "image": "img37.jpg"
+    },
+    "38": {
+        "name": "Gemstone Bracelet",
+        "price": "P800.00",
+        "category": "Men's",
+        "image": "img38.jpg"
+    },
+    "39": {
+        "name": "Festival Bracelet",
+        "price": "P200.00",
+        "category": "Women's",
+        "image": "img39.jpg"
+    },
+    "40": {
+        "name": "Classic Bracelet",
+        "price": "P300.00",
+        "category": "Unisex",
+        "image": "img40.jpg"
+    },
+    "41": {
+        "name": "Charm Bead Bracelet",
+        "price": "P400.00",
+        "category": "Men's",
+        "image": "img41.jpg"
+    },
+    "42": {
+        "name": "Sterling Silver Bracelet",
+        "price": "P550.00",
+        "category": "Women's",
+        "image": "img42.jpg"
+    },
+    "43": {
+        "name": "Infinity Bracelet",
+        "price": "P600.00",
+        "category": "Unisex",
+        "image": "img43.jpg"
+    },
+    "44": {
+        "name": "Personalized Bracelet",
+        "price": "P450.00",
+        "category": "Men's",
+        "image": "img44.jpg"
+    },
+    "45": {
+        "name": "Bohemian Bracelet",
+        "price": "P300.00",
+        "category": "Women's",
+        "image": "img45.jpg"
+    },
+    "46": {
+        "name": "Knot Bracelet",
+        "price": "P200.00",
+        "category": "Unisex",
+        "image": "img46.jpg"
+    },
+    "47": {
+        "name": "Resin Bracelet",
+        "price": "P350.00",
+        "category": "Men's",
+        "image": "img47.jpg"
+    },
+    "48": {
+        "name": "Geometric Bracelet",
+        "price": "P400.00",
+        "category": "Women's",
+        "image": "img48.jpg"
+    },
+    "49": {
+        "name": "Trendy Bracelet",
+        "price": "P250.00",
+        "category": "Unisex",
+        "image": "img49.jpg"
+    },
+    "50": {
+        "name": "Vintage Bracelet",
+        "price": "P600.00",
+        "category": "Men's",
+        "image": "img50.jpg"
     }
 }

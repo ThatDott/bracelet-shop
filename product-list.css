@@ -34,6 +34,7 @@
   border: 1px var(--base) solid;
 }
 
+.product-header div .active,
 .product-header div button:hover {
   background: var(--base);
   color: var(--complementary);
