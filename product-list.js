@@ -1,4 +1,4 @@
-function loadProducts() {
+function loadProducts(sortId) {
   const productList = document.querySelector(".product-list");
   const emptyMessage = document.createElement("h2");
   emptyMessage.textContent = "No Items Found";
@@ -12,10 +12,12 @@ function loadProducts() {
       return res.json();
     })
     .then((products) => {
-      let count = Object.keys(products).length;
-      for (i = 1; i <= count; i++) {
-        const product = products[i.toString()];
+      const productsArray = Object.keys(products).map(key => products[key]);
+      
+      productsArray.sort((a, b) => a[sortId].localeCompare(b[sortId]));
+      productList.innerHTML = "";
 
+      productsArray.forEach(product => {
         if (product) {
           const newProduct = document.createElement("div");
           const name = document.createElement("h3");
@@ -35,11 +37,11 @@ function loadProducts() {
         } else {
           productList.appendChild(emptyMessage);
         }
-      }
+      })
     })
     .catch((error) => console.error("Error: ", error));
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  loadProducts();
+  loadProducts("name");
 });
