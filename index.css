@@ -39,13 +39,13 @@
 .main-header-button:hover {
   background: var(--complementary);
   transition: background 0.2s, color 0.2s;
-  color: black;
+  color: var(--blacks);
 }
 
 .main-preview {
   position: relative;
   align-self: center;
-  background: black;
+  background: var(--blacks);
   aspect-ratio: 21/9;
   width: 100vw;
   margin: 0 15vw;
@@ -91,7 +91,7 @@
   margin: 0 0 60px 0;
   height: 5px;
   border-radius: 500px;
-  border: 1px black solid;
+  border: 1px var(--blacks) solid;
   opacity: 30%;
 }
 
@@ -111,7 +111,7 @@
 }
 
 .section-scroller > img {
-  background: black;
+  background: var(--blacks);
   aspect-ratio: 1/1;
 }
 

@@ -1,8 +1,10 @@
 :root {
   ---base: #004093;
-  --base: #119093;
+  ----base: #119093;
+  --base: orange;
   --complementary: #f8f8ff;
   --accent: #fff7d6;
+  --blacks: rgba(20,20,20,1);
 }
 
 * {
