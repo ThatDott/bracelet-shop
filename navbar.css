@@ -25,6 +25,7 @@ footer ul {
 
 a {
   font-size: 12px;
+  font-weight: bold;
   display: block;
   height: 100%;
   color: var(--complementary);
