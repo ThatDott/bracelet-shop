@@ -65,13 +65,13 @@
   margin: 0 20px 20px 20px;
   width: calc(33.33% - 40px);
   aspect-ratio: 1/1;
-  border: 1px solid var(--base);
+  border: 1px solid var(--blacks);
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0 0 10px 0;
   cursor: pointer;
   transition: border 0.5s;
-  background: var(--blacks);
+  background: var(--complementary);
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
@@ -85,7 +85,7 @@
 }
 
 .product-list-item > h3 {
-  color: var(--complementary);
+  color: var(--blacks);
   font-weight: bold;
   max-width: 100%;
   font-size: 80%;
@@ -97,7 +97,7 @@
 }
 
 .product-list-item > h5 {
-  color: var(--complementary);
+  color: var(--blacks);
   font-size: 10px;
 }
 

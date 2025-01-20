@@ -6,7 +6,7 @@ nav {
 }
 
 footer {
-  background: var(--base);
+  background: var(--blacks);
   height: 25vh;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@ a {
   justify-content: center;
   list-style: none;
   text-align: center;
-  background: var(--base);
+  background: var(--blacks);
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.1); 
   transition: transform 1s;
 }
