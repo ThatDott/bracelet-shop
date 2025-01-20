@@ -10,6 +10,7 @@
   display: flex;
   position: relative;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 10vh 0 0 0;
@@ -107,8 +108,22 @@
   flex-direction: row;
 }
 
+#search {
+  justify-content: center;
+  flex-basis: 100%;
+}
+
+#search input {
+  background: none;
+  height: 25px;
+  padding: 5px;
+  color: var(--blacks);
+  border: 1px var(--base) solid;
+}
+
 @media only screen and (max-width: 700px) {
-  .product-header, .product-header > div {
+  .product-header,
+  .product-header > div {
     gap: 10px;
     flex-direction: column;
   }
