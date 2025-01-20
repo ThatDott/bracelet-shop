@@ -5,6 +5,7 @@
   --complementary: #f8f8ff;
   --accent: #fff7d6;
   --blacks: rgba(20,20,20,1);
+  overscroll-behavior: none;
 }
 
 * {
