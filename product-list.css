@@ -71,6 +71,7 @@
   cursor: pointer;
   transition: border 0.5s;
   background: var(--blacks);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.5);
 }
 
 .product-list-item:hover {

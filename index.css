@@ -112,7 +112,8 @@
   margin: 20px;
 }
 
-.section-scroller > img {
+.section-scroller > * {
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.5);
   background: var(--blacks);
   aspect-ratio: 1/1;
 }
@@ -153,6 +154,7 @@
 
 #large {
   justify-content: center;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(0, 0, 0, 0.5);
   overflow-x: auto;
 }
 
