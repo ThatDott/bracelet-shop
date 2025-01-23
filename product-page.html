@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype HTML>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -10,7 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./root.css" />
-    <link rel="stylesheet" href="./product-list.css" />
+    <link rel="stylesheet" href="./product-page.css" />
     <link rel="stylesheet" href="./navbar.css" />
     <script src="./navbar.js"></script>
     <script src="./product-list.js"></script>
@@ -44,29 +44,10 @@
           <label for="search">Search Item:</label>
           <input type="string" name="search"/>
         </div>
-      <!-- Sort By -->
-        <div id="sort">
-          <p>Sort By:</p>
-          <div class="row">
-            <button class="sort-button" onClick="sortProducts(event, 'name')">Name</button>
-            <button class="sort-button" onClick="sortProducts(event, 'price')">Price</button>
-            <button class="sort-button" onClick="sortProducts(event, 'category')">Category</button>
-          </div>
-        </div>
-      <!-- Filter By -->
-        <div id="filter">
-          <p>Filter By:</p>
-          <div class="row">
-            <button class="filter-button active" onClick="filterProducts(event, 0)">None</button>
-            <button class="filter-button" onClick="filterProducts(event, 'Men\'s')">Men's Collection</button>
-            <button class="filter-button" onClick="filterProducts(event, 'Women\'s')">Women's Collection</button>
-            <button class="filter-button" onClick="filterProducts(event, 'Unisex')">Unisex</button>
-          </div>
-        </div>
       </div>
 
-      <!-- Product Array -->
-      <div class="product-list">
+      <!-- Product Preview -->
+      <div class="product-preview">
       </div>
     </div>
   </body>

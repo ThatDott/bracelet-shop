@@ -1,0 +1,12 @@
+#search {
+  justify-content: center;
+  flex-basis: 100%;
+}
+
+#search input {
+  background: none;
+  height: 25px;
+  padding: 5px;
+  color: var(--blacks);
+  border: 1px var(--base) solid;
+}
