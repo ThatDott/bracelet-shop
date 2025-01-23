@@ -38,7 +38,7 @@ function loadProducts(sortId, filterId) {
       return res.json();
     })
     .then((products) => {
-      let productsArray = Object.keys(products).map((key) => products[key]);
+      let productsArray = Object.keys(products).map((key) => ({...products[key], index: key}));
 
       // Filter Products
       if (filterId != 0) {
@@ -79,7 +79,7 @@ function loadProducts(sortId, filterId) {
           newProduct.appendChild(category);
 
           newProduct.onclick = (() => {
-            window.location.href = `product-details.html?id=${product.id}`
+            window.location.href = `product-details.html?id=${product.index}`
           })
 
           productList.appendChild(newProduct);
