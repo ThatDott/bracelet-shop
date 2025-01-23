@@ -78,6 +78,10 @@ function loadProducts(sortId, filterId) {
           newProduct.appendChild(price);
           newProduct.appendChild(category);
 
+          newProduct.onclick = (() => {
+            window.location.href = `product-details.html?id=${product.id}`
+          })
+
           productList.appendChild(newProduct);
         } else {
           productList.appendChild(emptyMessage);
