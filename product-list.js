@@ -29,6 +29,7 @@ function loadProducts(sortId, filterId) {
   // Message If No Products
   emptyMessage.textContent = "No Items Found";
 
+  // Fetch JSON file
   const file = "products.json";
   fetch(file)
     .then((res) => {

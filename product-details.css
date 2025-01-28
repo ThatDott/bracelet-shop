@@ -1,3 +1,60 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 50px;
+}
+
+.product-header {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10vh 0 0 0;
+  padding: 5vh 10vw;
+  width: 100vw;
+  gap: 30px;
+}
+
+.product-header > * {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  gap: 10px;
+  color: var(--blacks);
+  white-space: no-wrap;
+}
+
+.product-preview div button {
+  background: none;
+  height: 50px;
+  padding: 10px;
+  color: var(--blacks);
+  border: 1px var(--base) solid;
+  transition: font-weight 0.5s;
+}
+
+.product-preview div button:hover {
+  transition: font-weight 0.5s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#buy-now {
+  background: var(--base);
+  color: var(--complementary);
+  height: 50px;
+}
+
+.product-preview div button:active {
+  transform: scale(0.95);
+}
+  
 #search {
   justify-content: center;
   flex-basis: 100%;
@@ -9,4 +66,59 @@
   padding: 5px;
   color: var(--blacks);
   border: 1px var(--base) solid;
+}
+
+.product-preview {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  min-height: 55vh;
+  width: 100vw;
+  padding: 0 5vw;
+  gap: 5vw;
+  border: 1px solid black;
+}
+
+.product-preview-picture {
+  align-self: center;
+  align-content: center;
+  height: 70%;
+  aspect-ratio: 1/1;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.product-preview-picture:hover {
+  transform: translateY(-10px);
+  transition: transform 0.5s;
+}
+
+.product-preview-details {
+  flex-direction: column;
+  align-content: center;
+}
+
+.product-preview-button {
+  margin: 10px 5px;
+}
+
+#product-name {
+  
+}
+
+#product-category {
+  font-size: 15px;
+  font-style: italic;
+}
+
+#product-price {
+  font-size: 25px;
+  color: var(--base);
+}
+
+#product-description {
+
 }
