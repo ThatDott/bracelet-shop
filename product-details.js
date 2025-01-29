@@ -73,12 +73,15 @@ document.addEventListener("DOMContentLoaded", () => {
       if (isBuyNow) {
         window.location.href = "./cart.html";
       }
-      // Save updated cart
+      // Save Updated Cart
       sessionStorage.setItem("cart", JSON.stringify(cart));
 
-      // Increment and Store New Count
+      // Increment Total Count
       let cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
-      alert(`Added '${product.name}' to shopping cart.\nTotal Items: ${cartCount}`);
+      
+      // Store New Count
+      sessionStorage.setItem("cartCount", cartCount);
+      // alert(`Added '${product.name}' to shopping cart.\nTotal Items: ${cartCount}`);
     } else {
       alert("Product not found. Cannot add to cart.");
     }

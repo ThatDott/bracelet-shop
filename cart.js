@@ -84,9 +84,13 @@ function removeCartItem(index) {
     cart.splice(index, 1);
   }
 
-  // Save updated cart
+  // Save Updated Cart
   sessionStorage.setItem("cart", JSON.stringify(cart));
-  sessionStorage.setItem("cartCount", cart.length);
+
+  // Update Cart Count
+  let cartCount = sessionStorage.getItem("cartCount");
+  cartCount -= 1;
+  sessionStorage.setItem("cartCount", cartCount);
 
   // Reload the page to update the cart
   location.reload();
