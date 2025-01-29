@@ -9,8 +9,7 @@
 .product-header {
   display: flex;
   position: relative;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 10vh 0 0 0;
