@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
       addToCartButton.addEventListener("click", () => addToCart(product));
       buyNowButton.addEventListener("click", () => {
         addToCart(product);
-        window.location.href = "./shopping-cart.html";
+        window.location.href = "./cart.html";
       });
     }
   });
