@@ -1,350 +1,350 @@
 {
     "1": {
         "name": "Minimalist Bracelet",
-        "price": "P200.00",
+        "price": "200.00",
         "category": "Men's",
         "image": "img1.jpg",
         "description": "A sleek and simple bracelet for everyday wear."
     },
     "2": {
         "name": "Elegant Bracelet",
-        "price": "P250.00",
+        "price": "250.00",
         "category": "Women's",
         "image": "img2.jpg",
         "description": "An elegant bracelet perfect for special occasions."
     },
     "3": {
         "name": "Leather Bracelet",
-        "price": "P300.00",
+        "price": "300.00",
         "category": "Unisex",
         "image": "img3.jpg",
         "description": "A durable leather bracelet with a timeless design."
     },
     "4": {
         "name": "Beaded Bracelet",
-        "price": "P150.00",
+        "price": "150.00",
         "category": "Men's",
         "image": "img4.jpg",
         "description": "A handcrafted bracelet with natural beads."
     },
     "5": {
         "name": "Charm Bracelet",
-        "price": "P350.00",
+        "price": "350.00",
         "category": "Women's",
         "image": "img5.jpg",
         "description": "A charming bracelet adorned with unique pendants."
     },
     "6": {
         "name": "Gold Plated Bracelet",
-        "price": "P500.00",
+        "price": "500.00",
         "category": "Unisex",
         "image": "img6.jpg",
         "description": "A stylish bracelet with a luxurious gold finish."
     },
     "7": {
         "name": "Silver Bracelet",
-        "price": "P400.00",
+        "price": "400.00",
         "category": "Men's",
         "image": "img7.jpg",
         "description": "A classic silver bracelet for a polished look."
     },
     "8": {
         "name": "Adjustable Bracelet",
-        "price": "P220.00",
+        "price": "220.00",
         "category": "Women's",
         "image": "img8.jpg",
         "description": "A bracelet with an adjustable strap for a perfect fit."
     },
     "9": {
         "name": "Fitness Tracker Bracelet",
-        "price": "P600.00",
+        "price": "600.00",
         "category": "Unisex",
         "image": "img9.jpg",
         "description": "A modern bracelet with built-in fitness tracking features."
     },
     "10": {
         "name": "Pearl Bracelet",
-        "price": "P700.00",
+        "price": "700.00",
         "category": "Women's",
         "image": "img10.jpg",
         "description": "A timeless bracelet featuring exquisite pearls."
     },
     "11": {
         "name": "Wooden Beads Bracelet",
-        "price": "P180.00",
+        "price": "180.00",
         "category": "Men's",
         "image": "img11.jpg",
         "description": "A bracelet crafted with eco-friendly wooden beads."
     },
     "12": {
         "name": "Diamond Bracelet",
-        "price": "P800.00",
+        "price": "800.00",
         "category": "Women's",
         "image": "img12.jpg",
         "description": "A luxurious bracelet adorned with sparkling diamonds."
     },
     "13": {
         "name": "Silicone Bracelet",
-        "price": "P100.00",
+        "price": "100.00",
         "category": "Unisex",
         "image": "img13.jpg",
         "description": "A comfortable silicone bracelet for everyday use."
     },
     "14": {
         "name": "Friendship Bracelet",
-        "price": "P90.00",
+        "price": "90.00",
         "category": "Men's",
         "image": "img14.jpg",
         "description": "A fun bracelet to celebrate lasting friendships."
     },
     "15": {
         "name": "Crystal Bracelet",
-        "price": "P450.00",
+        "price": "450.00",
         "category": "Women's",
         "image": "img15.jpg",
         "description": "A dazzling bracelet featuring sparkling crystals."
     },
     "16": {
         "name": "Stainless Steel Bracelet",
-        "price": "P250.00",
+        "price": "250.00",
         "category": "Unisex",
         "image": "img16.jpg",
         "description": "A durable bracelet made from high-quality stainless steel."
     },
     "17": {
         "name": "Cuff Bracelet",
-        "price": "P300.00",
+        "price": "300.00",
         "category": "Men's",
         "image": "img17.jpg",
         "description": "A bold cuff bracelet with a masculine edge."
     },
     "18": {
         "name": "Rose Gold Bracelet",
-        "price": "P500.00",
+        "price": "500.00",
         "category": "Women's",
         "image": "img18.jpg",
         "description": "A stunning bracelet with a rosy gold shine."
     },
     "19": {
         "name": "Bangle Bracelet",
-        "price": "P350.00",
+        "price": "350.00",
         "category": "Unisex",
         "image": "img19.jpg",
         "description": "A versatile bangle bracelet for any occasion."
     },
     "20": {
         "name": "Leather Cuff Bracelet",
-        "price": "P320.00",
+        "price": "320.00",
         "category": "Men's",
         "image": "img20.jpg",
         "description": "A rugged bracelet with a sturdy leather cuff design."
     },
     "21": {
         "name": "Platinum Bracelet",
-        "price": "P1000.00",
+        "price": "1000.00",
         "category": "Women's",
         "image": "img21.jpg",
         "description": "An exquisite platinum bracelet for a luxurious touch."
     },
     "22": {
         "name": "Titanium Bracelet",
-        "price": "P400.00",
+        "price": "400.00",
         "category": "Unisex",
         "image": "img22.jpg",
         "description": "A lightweight yet durable titanium bracelet."
     },
     "23": {
         "name": "Rope Bracelet",
-        "price": "P200.00",
+        "price": "200.00",
         "category": "Men's",
         "image": "img23.jpg",
         "description": "A simple and stylish rope bracelet."
     },
     "24": {
         "name": "Shell Bracelet",
-        "price": "P180.00",
+        "price": "180.00",
         "category": "Women's",
         "image": "img24.jpg",
         "description": "A beach-inspired bracelet featuring natural shells."
     },
     "25": {
         "name": "Anklet Bracelet",
-        "price": "P220.00",
+        "price": "220.00",
         "category": "Unisex",
         "image": "img25.jpg",
         "description": "A fashionable anklet bracelet for casual outfits."
     },
     "26": {
         "name": "Wristband Bracelet",
-        "price": "P140.00",
+        "price": "140.00",
         "category": "Men's",
         "image": "img26.jpg",
         "description": "A comfortable and sporty wristband bracelet."
     },
     "27": {
         "name": "Chain Bracelet",
-        "price": "P450.00",
+        "price": "450.00",
         "category": "Women's",
         "image": "img27.jpg",
         "description": "A sophisticated chain bracelet with elegant links."
     },
     "28": {
         "name": "Cord Bracelet",
-        "price": "P120.00",
+        "price": "120.00",
         "category": "Unisex",
         "image": "img28.jpg",
         "description": "A minimalist bracelet made with durable cords."
     },
     "29": {
         "name": "Luxury Bracelet",
-        "price": "P900.00",
+        "price": "900.00",
         "category": "Men's",
         "image": "img29.jpg",
         "description": "An opulent bracelet for a refined look."
     },
     "30": {
         "name": "Handmade Bracelet",
-        "price": "P250.00",
+        "price": "250.00",
         "category": "Women's",
         "image": "img30.jpg",
         "description": "A beautiful bracelet handcrafted with care."
     },
     "31": {
         "name": "Stone Bracelet",
-        "price": "P300.00",
+        "price": "300.00",
         "category": "Unisex",
         "image": "img31.jpg",
         "description": "A natural stone bracelet with a calming effect."
     },
     "32": {
         "name": "Magnetic Bracelet",
-        "price": "P600.00",
+        "price": "600.00",
         "category": "Men's",
         "image": "img32.jpg",
         "description": "A magnetic bracelet designed for health benefits."
     },
     "33": {
         "name": "Birthstone Bracelet",
-        "price": "P400.00",
+        "price": "400.00",
         "category": "Women's",
         "image": "img33.jpg",
         "description": "A personalized bracelet featuring birthstones."
     },
     "34": {
         "name": "Braided Bracelet",
-        "price": "P180.00",
+        "price": "180.00",
         "category": "Unisex",
         "image": "img34.jpg",
         "description": "A trendy braided bracelet with a relaxed vibe."
     },
     "35": {
         "name": "Signature Bracelet",
-        "price": "P500.00",
+        "price": "500.00",
         "category": "Men's",
         "image": "img35.jpg",
         "description": "A bold bracelet to make a signature statement."
     },
     "36": {
         "name": "Love Bracelet",
-        "price": "P700.00",
+        "price": "700.00",
         "category": "Women's",
         "image": "img36.jpg",
         "description": "A romantic bracelet to symbolize everlasting love."
     },
     "37": {
         "name": "Link Bracelet",
-        "price": "P350.00",
+        "price": "350.00",
         "category": "Unisex",
         "image": "img37.jpg",
         "description": "A modern bracelet with interlocking links."
     },
     "38": {
         "name": "Gemstone Bracelet",
-        "price": "P800.00",
+        "price": "800.00",
         "category": "Men's",
         "image": "img38.jpg",
         "description": "A premium bracelet with stunning gemstones."
     },
     "39": {
         "name": "Festival Bracelet",
-        "price": "P200.00",
+        "price": "200.00",
         "category": "Women's",
         "image": "img39.jpg",
         "description": "A vibrant bracelet perfect for festivals."
     },
     "40": {
         "name": "Classic Bracelet",
-        "price": "P300.00",
+        "price": "300.00",
         "category": "Unisex",
         "image": "img40.jpg",
         "description": "A timeless bracelet that never goes out of style."
     },
     "41": {
         "name": "Charm Bead Bracelet",
-        "price": "P400.00",
+        "price": "400.00",
         "category": "Men's",
         "image": "img41.jpg",
         "description": "A bracelet adorned with intricate charm beads."
     },
     "42": {
         "name": "Sterling Silver Bracelet",
-        "price": "P550.00",
+        "price": "550.00",
         "category": "Women's",
         "image": "img42.jpg",
         "description": "A refined bracelet crafted from sterling silver."
     },
     "43": {
         "name": "Infinity Bracelet",
-        "price": "P600.00",
+        "price": "600.00",
         "category": "Unisex",
         "image": "img43.jpg",
         "description": "An infinity bracelet symbolizing eternal connections."
     },
     "44": {
         "name": "Personalized Bracelet",
-        "price": "P450.00",
+        "price": "450.00",
         "category": "Men's",
         "image": "img44.jpg",
         "description": "A customizable bracelet engraved with your name."
     },
     "45": {
         "name": "Hematite Bracelet",
-        "price": "P300.00",
+        "price": "300.00",
         "category": "Women's",
         "image": "img45.jpg",
         "description": "A bracelet with sleek, reflective hematite stones."
     },
     "46": {
         "name": "Eco-Friendly Bracelet",
-        "price": "P250.00",
+        "price": "250.00",
         "category": "Unisex",
         "image": "img46.jpg",
         "description": "An eco-conscious bracelet made from sustainable materials."
     },
     "47": {
         "name": "Colorful Bead Bracelet",
-        "price": "P150.00",
+        "price": "150.00",
         "category": "Men's",
         "image": "img47.jpg",
         "description": "A fun bracelet with a pop of vibrant colors."
     },
     "48": {
         "name": "Luxury Crystal Bracelet",
-        "price": "P850.00",
+        "price": "850.00",
         "category": "Women's",
         "image": "img48.jpg",
         "description": "A bracelet embellished with luxurious crystals."
     },
     "49": {
         "name": "Anchor Bracelet",
-        "price": "P350.00",
+        "price": "350.00",
         "category": "Unisex",
         "image": "img49.jpg",
         "description": "A nautical-inspired bracelet with a unique anchor charm."
     },
     "50": {
         "name": "Glow-in-the-Dark Bracelet",
-        "price": "P180.00",
+        "price": "180.00",
         "category": "Men's",
         "image": "img50.jpg",
         "description": "A fun bracelet that glows in the dark."

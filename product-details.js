@@ -52,15 +52,32 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   
   // Add to Cart Button Function
-  function addToCart(product) {
+  function addToCart(product, isBuyNow=false) {
     if (product) {
-      // Get Saved Cart Count or default to 0
-      let cartCount = localStorage.getItem("cartCount");
-      cartCount = cartCount ? parseInt(cartCount) : 0;
-      
+      // Add and Save product to Cart
+      let cart = sessionStorage.getItem("cart");
+      cart = cart ? JSON.parse(cart) : [];
+
+      // Adds item count if product already exists in cart
+      let existingProduct = cart.find(item => item.name === product.name);
+      if (existingProduct) {
+        if (!isBuyNow) {
+          existingProduct.quantity++;
+        }
+      } else {
+        product.quantity = 1;
+        cart.push(product);
+      }
+
+      // Redirects to next page if button is the "Buy Now Button"
+      if (isBuyNow) {
+        window.location.href = "./cart.html";
+      }
+      // Save updated cart
+      sessionStorage.setItem("cart", JSON.stringify(cart));
+
       // Increment and Store New Count
-      cartCount++;
-      localStorage.setItem("cartCount", cartCount);
+      let cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
       alert(`Added '${product.name}' to shopping cart.\nTotal Items: ${cartCount}`);
     } else {
       alert("Product not found. Cannot add to cart.");
@@ -69,16 +86,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Fetch Product and Set Up Button listener
   fetchProducts((product) => {
+    // Load Products into DOM
     loadProduct(product);
 
+    // Button Functionalities
     const addToCartButton = document.getElementById("add-to-cart");
     const buyNowButton = document.getElementById("buy-now");
     if (addToCartButton && buyNowButton) {
-      addToCartButton.addEventListener("click", () => addToCart(product));
-      buyNowButton.addEventListener("click", () => {
-        addToCart(product);
-        window.location.href = "./cart.html";
-      });
-    }
+      addToCartButton.addEventListener("click", () => addToCart(product, false));
+      buyNowButton.addEventListener("click", () => addToCart(product, true));
+    };
   });
 });
