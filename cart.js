@@ -38,7 +38,7 @@ function createCartItem(product, index) {
   // Product price
   const price = document.createElement("p");
   price.classList.add("cart-list-item-price");
-  price.textContent = `P${product.price}`;
+  price.textContent = `₱${product.price}`;
 
   // Quantity
   const quantity = document.createElement("p");
@@ -48,7 +48,7 @@ function createCartItem(product, index) {
   // Total price
   const total = document.createElement("p");
   total.classList.add("cart-list-item-total");
-  total.textContent = `Total: P${product.price * product.quantity}`;
+  total.textContent = `Subtotal: ₱${product.price * product.quantity}`;
 
   // Remove button
   const removeButton = document.createElement("button");
