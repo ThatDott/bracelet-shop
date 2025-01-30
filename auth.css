@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  gap: 0px;
+}
+
+.auth-container {
+  display: grid;
+  rows: 2;
+  border: 1px solid var(--blacks);
+  height: auto;
+  padding: 30px;
+}
+
+.auth-container-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

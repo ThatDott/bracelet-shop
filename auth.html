@@ -1,4 +1,4 @@
-<!doctype HTML>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -10,10 +10,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./root.css" />
+    <link rel="stylesheet" href="./auth.css" />
     <link rel="stylesheet" href="./navbar.css" />
-    <link rel="stylesheet" href="./cart.css" />
     <script src="./navbar.js"></script>
-    <script src="./cart.js"></script>
+    <script src="./auth.js"></script>
   </head>
   <body>
     
@@ -35,9 +35,24 @@
 
     <!-- Main Container -->
     <div class="container">
-      <!-- Shopping Cart -->
-      <div class="cart-list">
+      <div class="auth-container">
+        <div class="auth-container-group" id="sign-up">
+          <h1>Sign Up</h1>
+          <label for="email">Email</label>
+          <input type="string" name="email">
+          <label for="password">Password</label>
+          <input type="string" name="email">
+          <button class="auth-submit-button">Submit</button>
+        </div>
+        <div class="auth-container-group" id="log-in">
+          <h1>Log In</h1>
+          <label for="email">Email</label>
+          <input type="string" name="email">
+          <label for="password">Password</label>
+          <input type="string" name="password">
+          <button class="auth-submit-button">Submit</button>
+        </div>
       </div>
     </div>
   </body>
-<
+</html>
