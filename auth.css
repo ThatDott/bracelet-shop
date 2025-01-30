@@ -11,13 +11,30 @@
 .auth-container {
   display: grid;
   rows: 2;
+  gap: 10px;
   border: 1px solid var(--blacks);
   height: auto;
   padding: 30px;
+  margin: 10vh 0 0 0;
 }
 
 .auth-container-group {
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.auth-submit-button {
+  margin: 10px 0;
+  padding: 5px;
+  background: var(--base);
+  color: var(--complementary);
+  border: 1px solid var(--base);
+}
+
+.auth-submit-button:hover {
+  background: var(--complementary);
+  color: var(--base);
+  cursor: pointer;
+  transition: background 0.5s;
 }
