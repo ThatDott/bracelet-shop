@@ -1,5 +1,6 @@
 let currentSortId = "name";
 let currentFilterId = 0;
+let currentSearchQuery = "";
 
 // Set Active Button
 function setActiveButton(e, buttonClass) {
@@ -11,18 +12,24 @@ function setActiveButton(e, buttonClass) {
 function sortProducts(e, newSortId) {
   setActiveButton(e, ".sort-button");
   currentSortId = newSortId;
-  loadProducts(currentSortId, currentFilterId);
+  loadProducts(currentSortId, currentFilterId, currentSearchQuery);
 }
 
 // Set Filter Id
 function filterProducts(e, newFilterId) {
   setActiveButton(e, ".filter-button");
   currentFilterId = newFilterId;
-  loadProducts(currentSortId, currentFilterId);
+  loadProducts(currentSortId, currentFilterId, currentSearchQuery);
+}
+
+// Set Search Query
+function searchProducts() {
+  currentSearchQuery = searchInput.value.trim(); // Remove extra spaces
+  loadProducts(currentSortId, currentFilterId, currentSearchQuery);
 }
 
 // Load Products
-function loadProducts(sortId, filterId) {
+function loadProducts(sortId, filterId, searchQuery) {
   const productList = document.querySelector(".product-list");
   const emptyMessage = document.createElement("h2");
 
@@ -30,7 +37,7 @@ function loadProducts(sortId, filterId) {
   emptyMessage.textContent = "No Items Found";
 
   // Fetch JSON file from Backend Server
-  const collection = `http://localhost:5000/products?sort=${sortId}&filter=${filterId}`;
+  const collection = `http://localhost:5000/products?sort=${sortId}&filter=${filterId}&search=${searchQuery}`;
   fetch(collection)
     .then((res) => res.json())
     .then((productsArray) => {
@@ -71,5 +78,7 @@ function loadProducts(sortId, filterId) {
 
 // Initialization
 document.addEventListener("DOMContentLoaded", function () {
-  loadProducts(currentSortId, currentFilterId);
+  loadProducts(currentSortId, currentFilterId, currentSearchQuery);
+  searchInput = document.getElementById("searchInput"); 
+  searchInput.addEventListener("input", searchProducts);
 });

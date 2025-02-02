@@ -25,11 +25,20 @@ const Product = mongoose.model("Product", ProductSchema);
 // Fetch Products with Sorting & Filtering
 app.get("/products", async (req, res) => {
   try {
-    const { sort = "name", filter = 0 } = req.query;
+    const { sort = "name", filter = 0, search = "" } = req.query;
     
+    // Initialize Empty Query
     let query = {};
-    if (filter != 0) query.category = filter; // Filter by category if not 0
 
+    // Category Filter
+    if (filter != 0) query.category = filter; // Filter by category if not 0
+    
+    // Search Filter
+    if (search) {
+      query.name = { $regex: search, $options: "i" };
+    }
+
+    // Sort Products
     let products = await Product.find(query)
     if (sort === "price") {
       products = products.sort((a, b) => parseFloat(a.price) - parseFloat(b.price));
