@@ -35,6 +35,7 @@ function loadProducts(sortId, filterId, searchQuery) {
 
   // Message If No Products
   emptyMessage.textContent = "No Items Found";
+  emptyMessage.classList.add("empty-message");
 
   // Fetch JSON file from Backend Server
   const collection = `http://localhost:5000/products?sort=${sortId}&filter=${filterId}&search=${searchQuery}`;

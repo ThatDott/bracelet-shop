@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       cartList.appendChild(cartItemElement);
     });
   } else {
-    cartList.innerHTML = "<p>Your cart is empty.</p>";
+    cartList.innerHTML = `<h2 class="empty-message">Your cart is empty.</h2>`;
   }
 });
 

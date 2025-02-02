@@ -18,3 +18,9 @@
 body {
   background: var(--complementary);
 }
+
+.empty-message {
+  height: 80vh;
+  align-content: center;
+}
+
