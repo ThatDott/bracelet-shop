@@ -29,42 +29,19 @@ function loadProducts(sortId, filterId) {
   // Message If No Products
   emptyMessage.textContent = "No Items Found";
 
-  // Fetch JSON file
-  const file = "products.json";
-  fetch(file)
-    .then((res) => {
-      if (!res.ok) {
-        console.error("Failed to fetch JSON: ", error);
-      }
-      return res.json();
-    })
-    .then((products) => {
-      let productsArray = Object.keys(products).map((key) => ({...products[key], index: key}));
+  // Fetch JSON file from Backend Server
+  const collection = `http://localhost:5000/products?sort=${sortId}&filter=${filterId}`;
+  fetch(collection)
+    .then((res) => res.json())
+    .then((productsArray) => {
+      console.log(productsArray);
 
-      // Filter Products
-      if (filterId != 0) {
-        productsArray = productsArray.filter((product) => {
-          return product.category == filterId;
-        });
-      }
-
-      // Sort Products
-      if (sortId == "price") {
-        productsArray.sort((a, b) => {
-          // Removing "P" and parsing price for numeric comparison
-          const priceA = parseFloat(a.price.replace("P", "").replace(",", "").trim());
-          const priceB = parseFloat( b.price.replace("P", "").replace(",", "").trim());
-          return priceA - priceB;
-        });
-      } else if (sortId != 0) {
-        productsArray.sort((a, b) => a[sortId].localeCompare(b[sortId]));
-      }
       // Reset Products
       productList.innerHTML = "";
 
       // Generate Products in DOM
       productsArray.forEach((product) => {
-        if (product) {
+        if (productsArray.length !== 0) {
           const newProduct = document.createElement("div");
           const name = document.createElement("h3");
           const price = document.createElement("h4");
@@ -80,7 +57,7 @@ function loadProducts(sortId, filterId) {
           newProduct.appendChild(category);
 
           newProduct.onclick = (() => {
-            window.location.href = `product-details.html?id=${product.index}`
+            window.location.href = `product-details.html?id=${product.id}`
           })
 
           productList.appendChild(newProduct);
